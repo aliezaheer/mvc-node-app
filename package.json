@@ -1,0 +1,20 @@
+{
+  "name": "first-nodejs",
+  "version": "1.0.0",
+  "description": "First node js attemp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliezaheer/node-server.git"
+  },
+  "author": "Ali Zaheer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliezaheer/node-server/issues"
+  },
+  "homepage": "https://github.com/aliezaheer/node-server#readme"
+}
