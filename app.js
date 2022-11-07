@@ -1,15 +1,17 @@
 const express = require("express");
 
+const bodyParser = require("body-parser");
+
 const app = express();
 
-app.use((req, res, next) => {
-  console.log("A middleware res.");
-  next();
-});
+const adminRoutes = require("./routes/admin");
 
-app.use((req, res, next) => {
-  console.log("Second middleware res.");
-  res.send("<h1>This is response</h1>");
-});
+const shopRoutes = require("./routes/shop");
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(adminRoutes);
+
+app.use(shopRoutes);
 
 app.listen(3000);
