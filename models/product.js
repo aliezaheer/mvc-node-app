@@ -6,10 +6,14 @@ const Product = sequelize.define("product", {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
+
     primaryKey: true,
     defaultValue: null,
   },
-  title: Sequelize.STRING,
+
+  title: {
+    type: Sequelize.STRING,
+  },
 
   price: {
     type: Sequelize.DOUBLE,
