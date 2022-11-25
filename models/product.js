@@ -8,7 +8,6 @@ const Product = sequelize.define("product", {
     autoIncrement: true,
 
     primaryKey: true,
-    defaultValue: null,
   },
 
   title: {
